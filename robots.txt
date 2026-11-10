@@ -1,18 +1,22 @@
-# TEMPORARY: this site is currently staged at fitnessbyem.netlify.app while
-# fitnessbyem.com.au still points at the old Wix site. Blocking all crawling
-# here so Google doesn't index the temporary netlify.app URL and cause
-# duplicate-content/competing-domain issues once the real domain switches over.
-# REVERT to "Allow: /" (see below) when fitnessbyem.com.au is pointed at this site.
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /guides-thank-you.html
 
-# --- Restore this block and delete the Disallow above at real launch ---
-# User-agent: *
-# Allow: /
-#
-# # Block low-value pages from crawl budget
-# Disallow: /cdn-cgi/
-# Disallow: /*.json$
-#
-# # Sitemap location
-# Sitemap: https://www.fitnessbyem.com.au/sitemap.xml
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.fitnessbyem.com.au/sitemap.xml
