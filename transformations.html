@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Primary SEO -->
-<title>Weight Loss Transformation Results: Client Before & After | Fitness By Em</title>
-<meta name="description" content="Real weight loss results from real women coached by Emily Gray at Fitness By Em. Clients losing 6–15kg sustainably in 12–20 weeks. Read their stories.">
+<title>Client Results &amp; Transformations | Fitness By Em</title>
+<meta name="description" content="Before and after photos from women coached by Emily Gray. Results vary, but here is what sustainable, strength-based fat loss looks like in real life.">
 <link rel="canonical" href="https://www.fitnessbyem.com.au/transformations.html">
-<meta name="robots" content="index follow">
+<meta name="robots" content="index, follow">
 <meta name="author" content="Emily Gray, Masters Graduate Exercise Physiologist">
 <meta name="geo.region" content="AU">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Weight Loss Transformation Results: Client Before & After | Fitness By Em">
-<meta property="og:description" content="Real weight loss results from real women coached by Emily Gray at Fitness By Em. Clients losing 6–15kg sustainably in 12–20 weeks. Read their stories.">
+<meta property="og:title" content="Client Results &amp; Transformations | Fitness By Em">
+<meta property="og:description" content="Before and after photos from women coached by Emily Gray. Results vary, but here is what sustainable, strength-based fat loss looks like in real life.">
 <meta property="og:url" content="https://www.fitnessbyem.com.au/transformations.html">
-<meta property="og:image" content="images/hero-main.jpg">
+<meta property="og:image" content="https://www.fitnessbyem.com.au/images/hero-main.jpg">
 <meta property="og:site_name" content="Fitness By Em">
 <meta property="og:locale" content="en_AU">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Weight Loss Transformation Results: Client Before & After | Fitness By Em">
-<meta name="twitter:description" content="Real weight loss results from real women coached by Emily Gray at Fitness By Em. Clients losing 6–15kg sustainably in 12–20 weeks. Read their stories.">
-<meta name="twitter:image" content="images/hero-main.jpg">
+<meta name="twitter:title" content="Client Results &amp; Transformations | Fitness By Em">
+<meta name="twitter:description" content="Before and after photos from women coached by Emily Gray. Results vary, but here is what sustainable, strength-based fat loss looks like in real life.">
+<meta name="twitter:image" content="https://www.fitnessbyem.com.au/images/hero-main.jpg">
 
 
 <style>
@@ -109,6 +109,25 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
 .tc-stat { font-family:var(--font-display);font-size:1.4rem;color:white;font-weight:500;line-height:1.2; }
 .tc-label { font-size:0.72rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.1em; }
 .tc-quote { font-size:0.8rem;color:rgba(255,255,255,0.7);margin-top:0.4rem;font-weight:300;font-style:italic;line-height:1.5; }
+/* Transformation gallery grid */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; margin-top: 3rem; }
+.gc { position: relative; overflow: hidden; aspect-ratio: 4/5; background: var(--cream-dark); cursor: pointer; border-radius: 3px; }
+.gc img { width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease; display:block; }
+.gc:hover img { transform: scale(1.045); }
+.gc-tag { position:absolute; top:0.7rem; left:0.7rem; background:rgba(28,28,28,0.72); color:var(--warm-white); font-size:0.66rem; letter-spacing:0.12em; text-transform:uppercase; padding:0.35rem 0.6rem; border-radius:2px; opacity:0; transition:opacity 0.25s; }
+.gc:hover .gc-tag { opacity:1; }
+.gallery-note { color: var(--charcoal-mid); font-weight:300; font-size:0.92rem; margin-top:1.2rem; max-width:640px; }
+.lightbox { position:fixed; inset:0; z-index:500; display:none; align-items:center; justify-content:center; background:rgba(17,17,17,0.92); padding:2rem; }
+.lightbox.open { display:flex; }
+.lightbox img { max-width: min(92vw, 700px); max-height: 88vh; width:auto; height:auto; object-fit:contain; border-radius:3px; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+.lightbox-close { position:absolute; top:1.5rem; right:1.5rem; background:none; border:1px solid rgba(255,255,255,0.3); color:white; width:42px; height:42px; border-radius:50%; font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s, color 0.2s; }
+.lightbox-close:hover { border-color: var(--blush); color: var(--blush); }
+.lightbox-nav { position:absolute; top:50%; transform:translateY(-50%); background:none; border:1px solid rgba(255,255,255,0.3); color:white; width:46px; height:46px; border-radius:50%; font-size:1.4rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s, color 0.2s; }
+.lightbox-nav:hover { border-color: var(--blush); color: var(--blush); }
+.lightbox-prev { left:1.5rem; }
+.lightbox-next { right:1.5rem; }
+.lightbox-counter { position:absolute; bottom:1.5rem; left:50%; transform:translateX(-50%); color:rgba(255,255,255,0.6); font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; }
+@media(max-width:900px){ .gallery-grid{grid-template-columns:repeat(2,1fr)} .lightbox-nav{width:38px;height:38px;font-size:1.1rem} .lightbox-prev{left:0.6rem} .lightbox-next{right:0.6rem} }
 .testimonials-section { background: var(--cream); padding: 7rem 0; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
 .testimonial { background: white; padding: 2.5rem 2rem; border-top: 2px solid var(--blush); }
@@ -131,28 +150,33 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
 .faq-item.open .faq-answer { max-height: 500px; padding-bottom: 1.4rem; }
 .faq-answer p { font-size: 0.9rem; color: var(--charcoal-mid); font-weight: 300; line-height: 1.8; }
 .faq-answer p + p { margin-top: 0.8rem; }
+/* Mobile refinements */
+@media (max-width: 600px) {
+ .page-hero { padding: 7rem 0 2.5rem; }
+ .page-hero h1 { font-size: 2.4rem; }
+ .testimonials-section { padding: 3.5rem 0; }
+ .stats-bar { padding: 2.5rem 0; }
+ .cta-banner { padding: 3.5rem 1.25rem; }
+ .cta-banner h2 { font-size: 2.1rem; }
+ .gallery-grid { gap: 0.6rem; margin-top: 2rem; }
+ .gc-tag { opacity: 1; background: rgba(28,28,28,0.55); font-size: 0.6rem; padding: 0.28rem 0.5rem; top: 0.5rem; left: 0.5rem; }
+ .gallery-note { font-size: 0.85rem; }
+ .lightbox { padding: 1rem; }
+ .lightbox-close { width: 40px; height: 40px; top: 1rem; right: 1rem; }
+ .lightbox-nav { width: 40px; height: 40px; }
+ .lightbox-counter { bottom: 1rem; font-size: 0.7rem; }
+ .footer-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+ .footer-brand p { max-width: none; }
+ .footer-bottom { flex-direction: column; gap: 0.6rem; text-align: center; }
+ .testimonial { padding: 2rem 1.5rem; }
+ .hamburger { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+ .mobile-close { min-width: 44px; min-height: 44px; }
+ .lightbox-close, .lightbox-nav { min-width: 40px; min-height: 40px; }
+}
+.footer-bottom{flex-wrap:wrap}.footer-credit{font-size:0.75rem;opacity:.75;width:100%;text-align:center;margin-top:.8rem}.footer-credit a{color:inherit;text-decoration:underline}
 </style>
 
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "ItemList",
- "name": "Fitness By Em Client Weight Loss Transformation Results",
- "description": "Real weight loss transformation results from women coached by Emily Gray, Masters Graduate Exercise Physiologist at Fitness By Em. Women losing 6-12kg sustainably in 12-20 weeks.",
- "url": "https://www.fitnessbyem.com.au/transformations.html",
- "numberOfItems": 4,
- "itemListElement": [
- {"@type": "ListItem", "position": 1, "name": "Client A: Lost 9kg in 18 weeks", "description": "Signature Method client achieved 9kg weight loss over 18 weeks with personalised training and meal planning by Emily Gray."},
- {"@type": "ListItem", "position": 2, "name": "Client B: Lost 12kg in 20 weeks", "description": "Signature Method client lost 12kg in 20 weeks combining strength training with a personalised calorie-controlled meal plan."},
- {"@type": "ListItem", "position": 3, "name": "Client C: Lost 7kg in 15 weeks", "description": "Essential Plan client achieved 7kg fat loss in 15 weeks with personalised training and fortnightly coaching check-ins."},
- {"@type": "ListItem", "position": 4, "name": "Client D: Lost 11kg in 18 weeks", "description": "Signature Method client lost 11kg in 18 weeks through sustainable calorie deficit nutrition and progressive strength training."}
- ]
-}
-</script>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are these weight loss results typical?","acceptedAnswer":{"@type":"Answer","text":"Results vary depending on starting point, program adherence, and individual metabolism. The clients shown lost 7-12kg over 15-20 weeks, which is consistent with a sustainable rate of 0.25-0.75kg per week. Emily doesn't promise specific outcomes, she builds personalised plans designed to give each woman the best possible results for her specific body and lifestyle."}},{"@type":"Question","name":"How long does it take to see results with Fitness By Em?","acceptedAnswer":{"@type":"Answer","text":"Most clients notice changes in energy, strength, and body composition within 4-6 weeks. Visible weight loss results are typically significant by weeks 8-12. The minimum coaching commitment is 12 weeks because this is the period required for meaningful, lasting fat loss, not a quick fix that reverses."}},{"@type":"Question","name":"Do clients keep the weight off after coaching ends?","acceptedAnswer":{"@type":"Answer","text":"Sustainable results are the foundation of every Fitness By Em program. Rather than extreme protocols that require ongoing restriction, Emily builds habits and nutritional understanding that clients maintain independently. Many clients continue losing weight or maintaining their results long after their 12-week program concludes."}}]}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are these weight loss results typical?","acceptedAnswer":{"@type":"Answer","text":"Results vary depending on starting point, program adherence, and individual metabolism. Most clients lose 6–15kg over their first 12–24 weeks, which is consistent with a sustainable rate of 0.25–0.75kg per week. The photos here are examples, not a promise. Emily doesn't promise specific outcomes, she builds personalised plans designed to give each woman the best possible results for her specific body and lifestyle."}},{"@type":"Question","name":"How long does it take to see results with Fitness By Em?","acceptedAnswer":{"@type":"Answer","text":"Most clients start noticing changes in energy, sleep and strength within the first 3–4 weeks. Visible body composition changes typically become apparent around weeks 6–10, depending on your starting point, consistency and goals. The minimum coaching commitment is 12 weeks because this is the period required for meaningful, lasting fat loss, not a quick fix that reverses."}},{"@type":"Question","name":"Do clients keep the weight off after coaching ends?","acceptedAnswer":{"@type":"Answer","text":"Sustainable results are the foundation of every Fitness By Em program. Rather than extreme protocols that require ongoing restriction, Emily builds habits and nutritional understanding that clients maintain independently. Many clients continue losing weight or maintaining their results long after their 12-week program concludes."}}]}</script>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -195,34 +219,112 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
  </div>
 </div>
 
-<section style="padding:5rem 0">
+<section style="padding:clamp(2.5rem,8vw,5rem) 0">
  <div class="container">
- <div class="transforms-grid">
- <div class="tc">
- <img width="800" height="600" loading="lazy" src="images/group-standing.jpg" alt="Client transformation">
- <div class="tc-overlay"><div class="tc-stat">18 weeks</div><div class="tc-label">Signature Method</div><div class="tc-quote">"I actually feel strong for the first time in my life."</div></div>
- </div>
- <div class="tc">
- <img width="800" height="600" loading="lazy" src="images/group-couch.jpg" alt="Client transformation">
- <div class="tc-overlay"><div class="tc-stat">20 weeks</div><div class="tc-label">Signature Method</div><div class="tc-quote">"I stopped dreading the gym and actually look forward to it."</div></div>
- </div>
- <div class="tc">
- <img width="800" height="600" loading="lazy" src="images/community-group.jpg" alt="Client transformation">
- <div class="tc-overlay"><div class="tc-stat">15 weeks</div><div class="tc-label">Essential Plan</div><div class="tc-quote">"Em adjusted everything when I had an injury. She never just pushed through it."</div></div>
- </div>
- <div class="tc">
- <img width="800" height="600" loading="lazy" src="images/community-couch.jpg" alt="Client transformation">
- <div class="tc-overlay"><div class="tc-stat">18 weeks</div><div class="tc-label">Signature Method</div><div class="tc-quote">"I've tried so many coaches. This is the first time it actually felt personal."</div></div>
- </div>
+ <h2 class="section-title">The <em>gallery</em></h2>
+ <p class="gallery-note">Every photo below is a real Fitness By Em client. Tap any image to view it larger.</p>
+ <div class="gallery-grid" id="gallery-grid">
+  <div class="gc" onclick="openLightbox(0)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-01.jpg" alt="Fitness By Em client before and after transformation photo 1">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(1)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-02.jpg" alt="Fitness By Em client before and after transformation photo 2">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(2)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-03.jpg" alt="Fitness By Em client before and after transformation photo 3">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(3)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-04.jpg" alt="Fitness By Em client before and after transformation photo 4">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(4)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-05.jpg" alt="Fitness By Em client before and after transformation photo 5">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(5)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-06.jpg" alt="Fitness By Em client before and after transformation photo 6">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(6)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-07.jpg" alt="Fitness By Em client before and after transformation photo 7">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(7)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-08.jpg" alt="Fitness By Em client before and after transformation photo 8">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(8)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-09.jpg" alt="Fitness By Em client before and after transformation photo 9">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(9)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-10.jpg" alt="Fitness By Em client before and after transformation photo 10">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(10)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-11.jpg" alt="Fitness By Em client before and after transformation photo 11">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(11)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-12.jpg" alt="Fitness By Em client before and after transformation photo 12">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(12)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-13.jpg" alt="Fitness By Em client before and after transformation photo 13">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(13)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-14.jpg" alt="Fitness By Em client before and after transformation photo 14">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(14)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-15.jpg" alt="Fitness By Em client before and after transformation photo 15">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(15)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-16.jpg" alt="Fitness By Em client before and after transformation photo 16">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(16)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-17.jpg" alt="Fitness By Em client before and after transformation photo 17">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(17)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-18.jpg" alt="Fitness By Em client before and after transformation photo 18">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(18)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-19.jpg" alt="Fitness By Em client before and after transformation photo 19">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(19)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-20.jpg" alt="Fitness By Em client before and after transformation photo 20">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
+  <div class="gc" onclick="openLightbox(20)">
+   <img width="900" height="1125" loading="lazy" src="images/transformations/transformation-21.jpg" alt="Fitness By Em client before and after transformation photo 21">
+   <span class="gc-tag">Before &amp; After</span>
+  </div>
  </div>
  </div>
 </section>
+
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+ <button class="lightbox-close" aria-label="Close" onclick="closeLightbox()">&times;</button>
+ <button class="lightbox-nav lightbox-prev" aria-label="Previous" onclick="navLightbox(-1)">&#8249;</button>
+ <img id="lightbox-img" src="" alt="Client transformation, larger view">
+ <button class="lightbox-nav lightbox-next" aria-label="Next" onclick="navLightbox(1)">&#8250;</button>
+ <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
 
 <div class="stats-bar">
  <div class="container">
  <div class="stats-grid">
  <div class="stat-block"><div class="stat-num">450+</div><div class="stat-label">Women coached</div></div>
- <div class="stat-block"><div class="stat-num">6–15kg</div><div class="stat-label">Typical result range</div></div>
+ <div class="stat-block"><div class="stat-num">6–15kg</div><div class="stat-label">Typical loss over 12–24 weeks</div></div>
  <div class="stat-block"><div class="stat-num">5+</div><div class="stat-label">Years of coaching</div></div>
  <div class="stat-block"><div class="stat-num">100%</div><div class="stat-label">Online anywhere</div></div>
  </div>
@@ -236,27 +338,27 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
  <div class="testimonials-grid">
  <div class="testimonial">
  <p class="t-quote">I came in as a complete beginner who was intimidated by the gym. Em's programming made everything feel manageable. Six months later, I'm lifting weights I never imagined.</p>
- <p class="t-author">Sarah M.</p><p class="t-program">Signature Method · 24 weeks</p>
+ <p class="t-author">Sarah M.</p><p class="t-program">Signature Method</p>
  </div>
  <div class="testimonial">
  <p class="t-quote">I'd been training for two years with no results. Em looked at what I was doing and immediately identified what was missing. Within 8 weeks, I was seeing changes I'd been chasing for years.</p>
- <p class="t-author">Jess T.</p><p class="t-program">Essential Plan · 12 weeks</p>
+ <p class="t-author">Jess T.</p><p class="t-program">Essential Plan</p>
  </div>
  <div class="testimonial">
  <p class="t-quote">The check-ins are what make the difference. Having someone who actually looks at your week, asks the right questions, and adjusts things, that accountability is everything.</p>
- <p class="t-author">Mia R.</p><p class="t-program">Signature Method · 20 weeks</p>
+ <p class="t-author">Mia R.</p><p class="t-program">Signature Method</p>
  </div>
  <div class="testimonial">
  <p class="t-quote">I have a chronic injury, and every other coach I'd worked with either ignored it or was too cautious. Em actually understood the physiology and built everything around it. First time I've trained pain-free.</p>
- <p class="t-author">Lauren K.</p><p class="t-program">Signature Method · 16 weeks</p>
+ <p class="t-author">Lauren K.</p><p class="t-program">Signature Method</p>
  </div>
  <div class="testimonial">
  <p class="t-quote">I was sceptical about online coaching, but the daily messaging support means I genuinely never feel like I'm doing it alone. Em responds fast and the advice is always practical.</p>
- <p class="t-author">Chloe B.</p><p class="t-program">Essential Plan · 12 weeks</p>
+ <p class="t-author">Chloe B.</p><p class="t-program">Essential Plan</p>
  </div>
  <div class="testimonial">
  <p class="t-quote">The meal plan was a game changer. It wasn't restrictive, it was structured in a way that made me realise I'd been undereating and overtraining for years. My energy is completely different now.</p>
- <p class="t-author">Amelia W.</p><p class="t-program">Signature Method · 18 weeks</p>
+ <p class="t-author">Amelia W.</p><p class="t-program">Signature Method</p>
  </div>
  </div>
  </div>
@@ -271,11 +373,11 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
  
  <div class="faq-item open">
  <div class="faq-question" onclick="toggleFaq(this)">Are these weight loss results typical?<span class="faq-toggle">+</span></div>
- <div class="faq-answer"><p>Results vary depending on starting point, program adherence, and individual metabolism. The clients shown lost 7-12kg over 15-20 weeks, which is consistent with a sustainable rate of 0.25-0.75kg per week. Emily doesn't promise specific outcomes, she builds personalised plans designed to give each woman the best possible results for her specific body and lifestyle.</p></div>
+ <div class="faq-answer"><p>Results vary depending on starting point, program adherence, and individual metabolism. Most clients lose 6–15kg over their first 12–24 weeks, which is consistent with a sustainable rate of 0.25–0.75kg per week. The photos here are examples, not a promise. Emily doesn't promise specific outcomes, she builds personalised plans designed to give each woman the best possible results for her specific body and lifestyle.</p></div>
  </div>
  <div class="faq-item">
  <div class="faq-question" onclick="toggleFaq(this)">How long does it take to see results with Fitness By Em?<span class="faq-toggle">+</span></div>
- <div class="faq-answer"><p>Most clients notice changes in energy, strength, and body composition within 4-6 weeks. Visible weight loss results are typically significant by weeks 8-12. The minimum coaching commitment is 12 weeks because this is the period required for meaningful, lasting fat loss, not a quick fix that reverses.</p></div>
+ <div class="faq-answer"><p>Most clients start noticing changes in energy, sleep and strength within the first 3–4 weeks. Visible body composition changes typically become apparent around weeks 6–10, depending on your starting point, consistency and goals. The minimum coaching commitment is 12 weeks because this is the period required for meaningful, lasting fat loss, not a quick fix that reverses.</p></div>
  </div>
  <div class="faq-item">
  <div class="faq-question" onclick="toggleFaq(this)">Do clients keep the weight off after coaching ends?<span class="faq-toggle">+</span></div>
@@ -350,8 +452,8 @@ footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5)
  </div>
  </div>
  <div class="footer-bottom">
- <span>© 2025 Fitness By Em. All rights reserved.</span>
- <span class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></span>
+ <span>© 2026 Fitness By Em. All rights reserved.</span>
+ <span class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></span> <span class="footer-credit">Created by <a href="mailto:Jess@pivotco.com.au" rel="noopener">Pivot Co.</a></span>
  </div>
  </div>
 </footer>
@@ -362,6 +464,41 @@ if(nav) window.addEventListener('scroll', () => {
 }, {passive:true});
 const links = document.querySelectorAll('.nav-links a, .mobile-menu a');
 links.forEach(a => { if(a.href === window.location.href) a.classList.add('active'); });
+</script>
+<script>
+(function(){
+ var images = Array.prototype.map.call(document.querySelectorAll('#gallery-grid img'), function(img){ return { src: img.getAttribute('src'), alt: img.getAttribute('alt') }; });
+ var current = 0;
+ var lightbox = document.getElementById('lightbox');
+ var lbImg = document.getElementById('lightbox-img');
+ var counter = document.getElementById('lightbox-counter');
+ window.openLightbox = function(i){
+  current = i;
+  render();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+ };
+ window.closeLightbox = function(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+ };
+ window.navLightbox = function(dir){
+  current = (current + dir + images.length) % images.length;
+  render();
+ };
+ function render(){
+  var item = images[current];
+  lbImg.src = item.src;
+  lbImg.alt = item.alt;
+  counter.textContent = (current + 1) + ' / ' + images.length;
+ }
+ document.addEventListener('keydown', function(e){
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') navLightbox(-1);
+  if(e.key === 'ArrowRight') navLightbox(1);
+ });
+})();
 </script>
 <script>
 function toggleFaq(el){
