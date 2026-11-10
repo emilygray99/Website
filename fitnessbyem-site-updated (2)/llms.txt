@@ -1,0 +1,13 @@
+# Fitness By Em
+
+> Online fat-loss and strength coaching for women in Australia, run by Emily Gray, a Masters Graduate Exercise Physiologist and Myotherapist.
+
+Emily Gray coaches women online with personalised training, flexible nutrition and weekly check-ins. Content is general information, not medical advice.
+
+## Main pages
+- [Programs](https://www.fitnessbyem.com.au/programs.html): Essential Plan, Signature Method and Elevate Subscription
+- [About Emily Gray](https://www.fitnessbyem.com.au/coach.html): credentials and coaching approach
+- [FAQ](https://www.fitnessbyem.com.au/faq.html): pricing, results, training and nutrition questions
+- [Client results](https://www.fitnessbyem.com.au/transformations.html)
+- [Free guides](https://www.fitnessbyem.com.au/guides.html): six free PDF guides
+- [Blog](https://www.fitnessbyem.com.au/blog.html): articles on fat loss, strength training, nutrition and consistency

@@ -1,0 +1,24 @@
+# fitnessbyem.com.au: open to search engines and AI answer tools
+User-agent: *
+Allow: /
+Disallow: /guides-thank-you.html
+
+# AI search / answer crawlers (explicitly welcome)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.fitnessbyem.com.au/sitemap.xml

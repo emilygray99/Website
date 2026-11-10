@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fat Loss &amp; Strength Training Blog for Women | Fitness By Em</title>
+<meta name="description" content="Evidence-based articles on fat loss, strength training, nutrition and consistency for women, written by Exercise Physiologist Emily Gray.">
+<link rel="canonical" href="https://www.fitnessbyem.com.au/blog/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fat Loss &amp; Strength Training Blog for Women | Fitness By Em">
+<meta property="og:description" content="Evidence-based articles on fat loss, strength training, nutrition and consistency for women, written by Exercise Physiologist Emily Gray.">
+<meta property="og:url" content="https://www.fitnessbyem.com.au/blog/">
+<meta property="og:site_name" content="Fitness By Em">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fat Loss &amp; Strength Training Blog for Women | Fitness By Em">
+<meta name="twitter:description" content="Evidence-based articles on fat loss, strength training, nutrition and consistency for women, written by Exercise Physiologist Emily Gray.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+/* SHARED STYLES - fitnessbyem */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+ --cream: #F5F2EC; --cream-dark: #EAE4D8; --sage: #B9A88E; --sage-light: #D6CCBD;
+ --charcoal: #1C1C1C; --charcoal-mid: #3D3D3D; --warm-white: #FAF8F4;
+ --blush: #B9A88E; --blush-light: #D6CCBD; --blush-dark: #8B7656;
+ --font-display: 'Cormorant Garamond', Georgia, serif;
+ --font-body: 'Raleway', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--warm-white); color: var(--charcoal); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+#main-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(253,250,247,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(232,216,118,0.12); transition: padding 0.3s; }
+.nav-logo { font-family: var(--font-display); font-size: 1.6rem; font-weight: 500; color: var(--charcoal); text-decoration: none; letter-spacing: 0.02em; }
+.nav-logo span { color: var(--blush); }
+.logo-img { height: 46px; width: auto; display: block; }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--charcoal-mid); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--blush); }
+.nav-cta { background: var(--charcoal) !important; color: var(--warm-white) !important; padding: 0.6rem 1.4rem !important; border-radius: 2px; }
+.nav-cta:hover { background: var(--blush) !important; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--charcoal); transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--warm-white); z-index: 200; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 2rem; }
+.mobile-menu.open { display: flex; }
+.mobile-menu-logo { height: 38px; width: auto; margin-bottom: 2.2rem; }
+.mobile-link { font-family: var(--font-display); font-size: 1.6rem; font-weight: 500; color: var(--charcoal); text-decoration: none; transition: color 0.2s, font-style 0.2s; padding: 0.7rem 0; border-bottom: 1px solid var(--cream-dark); width: 230px; text-align: center; }
+.mobile-link:hover { color: var(--blush); font-style: italic; }
+.mobile-cta { font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; background: var(--blush); color: white; border: none; padding: 0.9rem 2.2rem; margin-top: 1.8rem; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+.mobile-cta:hover { background: var(--blush-dark); }
+.mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; cursor: pointer; font-size: 1.5rem; color: var(--charcoal); }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; }
+section { padding: 6rem 0; }
+.section-label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blush); margin-bottom: 1rem; font-weight: 400; }
+.section-title { font-family: var(--font-display); font-size: clamp(2rem, 3vw, 3.2rem); font-weight: 500; color: var(--charcoal); line-height: 1.1; margin-bottom: 1.5rem; }
+.section-title em { font-style: italic; color: var(--blush); }
+.btn-primary { background: var(--blush); color: white; text-decoration: none; padding: 0.85rem 2rem; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; border-radius: 2px; transition: background 0.2s, transform 0.15s; display: inline-block; font-family: var(--font-body); border: none; cursor: pointer; }
+.btn-primary:hover { background: var(--blush-dark); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(--charcoal); text-decoration: none; padding: 0.85rem 2rem; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; border: 1px solid var(--charcoal); border-radius: 2px; transition: all 0.2s; display: inline-block; font-family: var(--font-body); cursor: pointer; }
+.btn-outline:hover { background: var(--charcoal); color: white; }
+.btn-light { background: var(--warm-white); color: var(--charcoal); text-decoration: none; padding: 0.85rem 2.2rem; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; border-radius: 2px; display: inline-block; font-family: var(--font-body); transition: background 0.2s; }
+.btn-light:hover { background: var(--blush-light); }
+.marquee-strip { background: var(--charcoal); padding: 0.9rem 0; overflow: hidden; white-space: nowrap; }
+.marquee-inner { display: inline-flex; gap: 3rem; animation: marquee 28s linear infinite; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-item { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 300; }
+.marquee-item .dot { color: var(--blush); margin: 0 0.5rem; }
+.cta-banner { background: var(--charcoal); text-align: center; padding: 6rem 2rem; }
+.cta-banner .section-label { color: var(--blush-light); }
+.cta-banner h2 { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 4rem); font-weight: 500; color: white; line-height: 1.1; margin-bottom: 1.5rem; }
+.cta-banner h2 em { font-style: italic; color: var(--blush-light); }
+.cta-banner p { color: rgba(255,255,255,0.6); font-weight: 300; font-size: 1rem; max-width: 500px; margin: 0 auto 2.5rem; }
+footer { background: #1C1C1C; padding: 4rem 0 2rem; color: rgba(255,255,255,0.5); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand p { font-size: 0.85rem; margin-top: 1rem; font-weight: 300; line-height: 1.75; max-width: 280px; }
+.footer-social { display: flex; gap: 1rem; margin-top: 1.5rem; }
+.footer-social a { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgba(255,255,255,0.55); font-size: 0.8rem; transition: border-color 0.2s, color 0.2s; }
+.footer-social a:hover { border-color: var(--blush); color: var(--blush); }
+.footer-col h4 { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 1.2rem; font-weight: 400; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.6rem; }
+.footer-col ul a { text-decoration: none; color: rgba(255,255,255,0.5); font-size: 0.88rem; font-weight: 300; transition: color 0.2s; }
+.footer-col ul a:hover { color: var(--blush-light); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; }
+.footer-legal-links a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 0.3rem; } .footer-legal-links a:hover { color: var(--blush-light); }
+.page-hero { padding: 10rem 0 5rem; background: var(--cream); }
+@media (max-width: 900px) {
+ #main-nav { padding: 1rem 1.5rem; }
+ .nav-links { display: none; }
+ .hamburger { display: flex; }
+ .footer-grid { grid-template-columns: 1fr 1fr; }
+ .container { padding: 0 1.5rem; }
+ section { padding: 4rem 0; }
+}
+.page-hero { padding: 10rem 0 5rem; background: var(--cream); }
+.page-hero h1 { font-family: var(--font-display); font-size: clamp(3rem,5vw,5rem); font-weight: 500; line-height: 1.05; }
+.page-hero h1 em { font-style: italic; color: var(--blush); }
+.page-hero p { color: var(--charcoal-mid); font-weight: 300; max-width: 540px; margin-top: 1.2rem; }
+.blog-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 5rem; margin-top: 4rem; }
+.post-list { display: flex; flex-direction: column; gap: 3rem; }
+.post-item { border-bottom: 1px solid var(--cream-dark); padding-bottom: 3rem; }
+.post-item:last-child { border-bottom: none; }
+.post-category { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blush); margin-bottom: 0.8rem; }
+.post-title { font-family: var(--font-display); font-size: clamp(1.5rem,2.5vw,2.2rem); font-weight: 500; color: var(--charcoal); line-height: 1.2; margin-bottom: 0.8rem; text-decoration: none; display: block; transition: color 0.2s; }
+.post-title:hover { color: var(--blush); }
+.post-excerpt { font-size: 0.92rem; color: var(--charcoal-mid); font-weight: 300; line-height: 1.75; margin-bottom: 1.2rem; }
+.post-meta { font-size: 0.78rem; color: var(--charcoal-mid); display: flex; gap: 1.5rem; }
+.post-meta span { display: flex; align-items: center; gap: 0.3rem; }
+.sidebar { position: sticky; top: 100px; align-self: start; }
+.sidebar-section { margin-bottom: 3rem; }
+.sidebar-section h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--charcoal); margin-bottom: 1.2rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--blush); display: inline-block; }
+.sidebar-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.sidebar-tag { font-size: 0.75rem; padding: 0.35rem 0.8rem; border: 1px solid var(--cream-dark); color: var(--charcoal-mid); text-decoration: none; transition: all 0.2s; }
+.sidebar-tag:hover { border-color: var(--blush); color: var(--blush); }
+.sidebar-cta { background: var(--charcoal); padding: 2rem; }
+.sidebar-cta h3 { font-family: var(--font-display); font-size: 1.3rem; color: white; font-weight: 500; margin-bottom: 0.8rem; }
+.sidebar-cta p { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 300; margin-bottom: 1.2rem; }
+@media(max-width:900px){ .blog-grid{grid-template-columns:1fr} .sidebar{position:static} }
+.footer-bottom{flex-wrap:wrap}.footer-credit{font-size:0.75rem;opacity:.75;width:100%;text-align:center;margin-top:.8rem}.footer-credit a{color:inherit;text-decoration:underline}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "Fitness By Em , Weight Loss and Fitness Blog for Women",
+ "description": "Evidence-based articles on sustainable weight loss strength training nutrition and fitness consistency for women. Written weekly by Masters Graduate Exercise Physiologist Emily Gray.",
+ "url": "https://www.fitnessbyem.com.au/blog/",
+ "author": {
+ "@type": "Person",
+ "name": "Emily Gray",
+ "jobTitle": "Masters Graduate Exercise Physiologist",
+ "url": "https://www.fitnessbyem.com.au/coach.html"
+ },
+ "publisher": {"@type": "Organization", "name": "Fitness By Em", "url": "https://www.fitnessbyem.com.au"},
+ "inLanguage": "en-AU",
+ "audience": {"@type": "Audience", "audienceType": "Women seeking evidence-based weight loss and fitness information"}
+}
+</script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<nav id="main-nav">
+ <a href="index.html" class="nav-logo"><img src="images/logo-black-wordmark.png" alt="Fitness By Em" class="logo-img"></a>
+ <ul class="nav-links">
+ <li><a href="programs.html">Programs</a></li>
+ <li><a href="elevate.html">Elevate</a></li>
+ <li><a href="coach.html">About Em</a></li>
+ <li><a href="transformations.html">Results</a></li>
+ <li><a href="guides.html">Free Guides</a></li>
+ <li><a href="faq.html">FAQ</a></li>
+ <li><a href="https://calendly.com/emilygray81099/free-30min-consult-call" class="nav-cta">Free Consult</a></li>
+ </ul>
+ <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobile-menu').classList.add('open')">
+ <span></span><span></span><span></span>
+ </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+ <button class="mobile-close" onclick="document.getElementById('mobile-menu').classList.remove('open')">&times;</button>
+ <img src="images/logo-black-wordmark.png" alt="Fitness By Em" class="mobile-menu-logo">
+ <a href="index.html" class="mobile-link">Home</a>
+ <a href="programs.html" class="mobile-link">Programs</a>
+ <a href="elevate.html" class="mobile-link">Elevate</a>
+ <a href="coach.html" class="mobile-link">About Em</a>
+ <a href="transformations.html" class="mobile-link">Results</a>
+ <a href="guides.html" class="mobile-link">Free Guides</a>
+ <a href="faq.html" class="mobile-link">FAQ</a>
+ <a href="https://calendly.com/emilygray81099/free-30min-consult-call" class="mobile-cta">Book Free Call</a>
+</div>
+<div class="page-hero">
+ <div class="container">
+ <p class="section-label">The Fitness By Em blog</p>
+ <h1>Evidence-based insights on<br><em>weight loss & strength</em> for women</h1>
+ <p>Written by Emily Gray, Masters Graduate Exercise Physiologist. Published weekly, straightforward advice on what actually works.</p>
+ </div>
+</div>
+
+<section style="padding:5rem 0">
+ <div class="container">
+ <div class="blog-grid">
+ <main aria-label="Blog posts">
+ <div class="post-list">
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Nutrition</p>
+ <a href="blog/how-to-eat-at-social-events-without-guilt.html" class="post-title" itemprop="headline">
+ How to Eat at Social Events Without Derailing Your Fat Loss Goals
+ </a>
+ <p class="post-excerpt" itemprop="description">Worried about eating out, parties, or holidays ruining your progress? Here's why they won't, and how to handle social eating without guilt or restriction.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-07-27">July 27, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/how-to-eat-at-social-events-without-guilt.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/stop-waiting-to-start-your-fitness-journey.html" class="post-title" itemprop="headline">
+ Stop Waiting to Start Your Fitness Journey (The Right Time Is Now)
+ </a>
+ <p class="post-excerpt" itemprop="description">Still waiting for the right time to start? It's not coming. Exercise Physiologist Emily Gray on why you're overthinking it and what to do right now instead.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-07-20">July 20, 2026</span>
+ <span>4 min read</span>
+ <a href="blog/stop-waiting-to-start-your-fitness-journey.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Weight Loss</p>
+ <a href="blog/how-to-stay-fit-when-life-gets-busy.html" class="post-title" itemprop="headline">
+ How to Stay Fit When Life Gets Busy (Without Giving Up Everything Else)
+ </a>
+ <p class="post-excerpt" itemprop="description">Too busy to train consistently? You don't need more time, you need a smarter approach. Exercise Physiologist Emily Gray shares what actually works for busy women.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-07-13">July 13, 2026</span>
+ <span>4 min read</span>
+ <a href="blog/how-to-stay-fit-when-life-gets-busy.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Weight Loss</p>
+ <a href="blog/how-to-create-a-fitness-routine-that-fits-your-life.html" class="post-title" itemprop="headline">
+ How to Create a Fitness Routine That Actually Fits Your Life
+ </a>
+ <p class="post-excerpt" itemprop="description">Most fitness routines fail because they're built for your ideal self, not your real life. Here's how to build one that actually works, even on your worst weeks.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-07-06">July 6, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/how-to-create-a-fitness-routine-that-fits-your-life.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/how-to-get-back-into-a-fitness-routine.html" class="post-title" itemprop="headline">
+ How to Get Back Into a Fitness Routine (Without Starting Over)
+ </a>
+ <p class="post-excerpt" itemprop="description">Fallen off your fitness routine? You don't need to start over. Here's exactly how to get back on track without the pressure, guilt, or all-or-nothing thinking.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-06-29">June 29, 2026</span>
+ <span>6 min read</span>
+ <a href="blog/how-to-get-back-into-a-fitness-routine.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/what-to-do-when-you-are-not-motivated-to-exercise.html" class="post-title" itemprop="headline">
+ What to Do When You're Not Motivated to Train
+ </a>
+ <p class="post-excerpt" itemprop="description">Waiting for motivation to train? It's not coming first. Here's what Exercise Physiologist Emily Gray does instead and what actually keeps you consistent.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-06-22">June 22, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/what-to-do-when-you-are-not-motivated-to-exercise.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Training</p>
+ <a href="blog/why-recovery-is-essential-for-fat-loss.html" class="post-title" itemprop="headline">
+ Why Recovery Is Essential for Fat Loss (Not Optional)
+ </a>
+ <p class="post-excerpt" itemprop="description">Training hard but not seeing results? Recovery might be the missing piece. Exercise Physiologist Emily Gray explains why rest is where the magic actually happens.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-06-15">June 15, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/why-recovery-is-essential-for-fat-loss.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Training</p>
+ <a href="blog/biggest-gym-mistakes-beginners-make.html" class="post-title" itemprop="headline">
+ The Biggest Gym Mistakes Beginners Make (And How to Fix Them)
+ </a>
+ <p class="post-excerpt" itemprop="description">Starting the gym and not seeing results? You might be making these common beginner mistakes. Here's what to fix and how to train smarter from day one.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-06-08">June 8, 2026</span>
+ <span>6 min read</span>
+ <a href="blog/biggest-gym-mistakes-beginners-make.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Training</p>
+ <a href="blog/how-many-days-should-women-train-per-week.html" class="post-title" itemprop="headline">
+ How Many Days Should Women Train Per Week? The Real Answer
+ </a>
+ <p class="post-excerpt" itemprop="description">Not sure how many days a week to train? The answer depends on your goals and lifestyle. Here's what Exercise Physiologist Emily Gray actually recommends.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-06-01">June 1, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/how-many-days-should-women-train-per-week.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Nutrition</p>
+ <a href="blog/flexible-nutrition-for-fat-loss-beginners-guide.html" class="post-title" itemprop="headline">
+ Flexible Nutrition for Fat Loss: How to Eat the Foods You Love and Still Get Results
+ </a>
+ <p class="post-excerpt" itemprop="description">Tired of restrictive diets that don't last? Flexible nutrition lets you eat the foods you love and still lose fat. Here's how to get started without the guilt.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-05-25">May 25, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/flexible-nutrition-for-fat-loss-beginners-guide.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Nutrition</p>
+ <a href="blog/what-are-macros-simple-guide-women.html" class="post-title" itemprop="headline">
+ What Are Macros? A Simple, No-Nonsense Guide for Women
+ </a>
+ <p class="post-excerpt" itemprop="description">Confused by macros? You're not alone. Exercise Physiologist Emily Gray explains what macronutrients are, why they matter, and how to use them without obsessing.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-05-18">May 18, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/what-are-macros-simple-guide-women.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Training</p>
+ <a href="blog/progressive-overload-for-women-explained.html" class="post-title" itemprop="headline">
+ Progressive Overload: The Training Principle That Actually Changes Your Body
+ </a>
+ <p class="post-excerpt" itemprop="description">Been training for months and plateaued? Progressive overload is the principle you might be missing. Exercise Physiologist Emily Gray breaks it down simply.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-05-11">May 11, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/progressive-overload-for-women-explained.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Weight Loss</p>
+ <a href="blog/how-stress-affects-fat-loss.html" class="post-title" itemprop="headline">
+ How Stress Affects Fat Loss — And What to Actually Do About It
+ </a>
+ <p class="post-excerpt" itemprop="description">Doing everything right but not losing fat? Chronic stress might be why. Exercise Physiologist Emily Gray explains the cortisol-fat loss connection and how to fix it.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-05-04">May 4, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/how-stress-affects-fat-loss.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/consistency-vs-perfection-fat-loss.html" class="post-title" itemprop="headline">
+ Consistency vs Perfection: What Actually Gets Fat Loss Results
+ </a>
+ <p class="post-excerpt" itemprop="description">Perfection isn't what gets fat loss results, consistency is. Exercise Physiologist Emily Gray explains why and how to build consistency that actually sticks.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-04-27">April 27, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/consistency-vs-perfection-fat-loss.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/why-you-keep-starting-over-with-fitness.html" class="post-title" itemprop="headline">
+ Why You Keep Starting Over With Fitness (And How to Finally Stop)
+ </a>
+ <p class="post-excerpt" itemprop="description">Stuck in the start-stop cycle with fitness? It's not a willpower problem. Here's the real reason you keep restarting and how to break the cycle for good.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-04-20">April 20, 2026</span>
+ <span>7 min read</span>
+ <a href="blog/why-you-keep-starting-over-with-fitness.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/why-quick-fixes-dont-work-for-lasting-fat-loss.html" class="post-title" itemprop="headline">
+ Why Quick Fixes Don't Work for Fat Loss (And What Actually Does)
+ </a>
+ <p class="post-excerpt" itemprop="description">Rapid fat loss programs, detox cleanses, 6-week challenges, why do they always fail? Exercise Physiologist Emily Gray explains what actually works instead.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-04-13">April 13, 2026</span>
+ <span>5 min read</span>
+ <a href="blog/why-quick-fixes-dont-work-for-lasting-fat-loss.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/tried-every-diet-and-nothing-has-worked.html" class="post-title" itemprop="headline">
+ Tried Everything and Nothing Has Worked? Here's Why — And What to Do Instead
+ </a>
+ <p class="post-excerpt" itemprop="description">If you've tried every diet and program and still can't get results that last, this is for you. It's not you. It's the approach. Here's what to do differently.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2026-04-06">April 6, 2026</span>
+ <span>6 min read</span>
+ <a href="blog/tried-every-diet-and-nothing-has-worked.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Weight Loss</p>
+ <a href="blog/why-you-keep-losing-and-regaining-weight.html" class="post-title" itemprop="headline">
+ Why You Keep Losing and Regaining the Same Weight (And How to Break the Cycle)
+ </a>
+ <p class="post-excerpt" itemprop="description">Yo-yo dieting is one of the most demoralising experiences in fitness. You lose the weight feel great for a few months then slowly watch it creep back. Here's what's actually happening physiologically and what to do instead.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2025-06-26">June 26, 2025</span>
+ <span>7 min read</span>
+ <a href="blog/why-you-keep-losing-and-regaining-weight.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Nutrition</p>
+ <a href="blog/how-much-protein-do-women-need.html" class="post-title" itemprop="headline">
+ How Much Protein Do Women Actually Need for Weight Loss?
+ </a>
+ <p class="post-excerpt" itemprop="description">Protein is the most important nutrition variable for women trying to lose weight but most women aren't eating nearly enough. Here's exactly how much you need why it matters and the easiest ways to hit your target.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2025-06-19">June 19, 2025</span>
+ <span>6 min read</span>
+ <a href="blog/how-much-protein-do-women-need.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Training</p>
+ <a href="blog/strength-training-for-fat-loss-women.html" class="post-title" itemprop="headline">
+ Why Strength Training is the Best Thing You Can Do for Fat Loss (As a Woman)
+ </a>
+ <p class="post-excerpt" itemprop="description">Most women think cardio is the answer to weight loss. It's not or at least not the whole picture. Here's why building muscle is the most powerful thing you can do for sustainable fat loss and how to get started.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2025-06-12">June 12, 2025</span>
+ <span>8 min read</span>
+ <a href="blog/strength-training-for-fat-loss-women.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ <article class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+ <meta itemprop="author" content="Emily Gray">
+ <p class="post-category">Mindset</p>
+ <a href="blog/how-to-stay-consistent-with-exercise.html" class="post-title" itemprop="headline">
+ How to Actually Stay Consistent With Exercise (When Motivation Runs Out)
+ </a>
+ <p class="post-excerpt" itemprop="description">Motivation gets you started. Systems keep you going. Here's the practical framework I use with every client to build exercise consistency that survives a stressful week a holiday and a bad day.</p>
+ <div class="post-meta">
+ <span itemprop="datePublished" content="2025-06-05">June 5, 2025</span>
+ <span>6 min read</span>
+ <a href="blog/how-to-stay-consistent-with-exercise.html" style="color:var(--blush);text-decoration:none">Read more →</a>
+ </div>
+ </article>
+
+ </div>
+ </main>
+
+ <aside class="sidebar" aria-label="Blog sidebar">
+ <div class="sidebar-cta">
+ <h3>Ready to stop guessing?</h3>
+ <p>Get a personalised weight loss plan built by a Masters Graduate Exercise Physiologist.</p>
+ <a href="https://calendly.com/emilygray81099/free-30min-consult-call" class="btn-light" style="font-size:0.78rem;padding:0.65rem 1.2rem">Book a free call</a>
+ </div>
+
+ <div class="sidebar-section" style="margin-top:2.5rem">
+ <h3>Topics</h3>
+ <div class="sidebar-tags">
+ <a href="#" class="sidebar-tag">Weight loss</a>
+ <a href="#" class="sidebar-tag">Nutrition</a>
+ <a href="#" class="sidebar-tag">Strength training</a>
+ <a href="#" class="sidebar-tag">Mindset</a>
+ <a href="#" class="sidebar-tag">Consistency</a>
+ <a href="#" class="sidebar-tag">Protein</a>
+ <a href="#" class="sidebar-tag">Fat loss</a>
+ <a href="#" class="sidebar-tag">Home workouts</a>
+ <a href="#" class="sidebar-tag">Meal planning</a>
+ <a href="#" class="sidebar-tag">Hormones</a>
+ </div>
+ </div>
+
+ <div class="sidebar-section">
+ <h3>Free guides</h3>
+ <div style="display:flex;flex-direction:column;gap:0.8rem">
+ <a href="guides.html" style="font-size:0.85rem;color:var(--charcoal-mid);text-decoration:none;padding:0.8rem;background:var(--cream);display:block;font-weight:300;transition:background 0.2s" onmouseover="this.style.background='var(--cream-dark)'" onmouseout="this.style.background='var(--cream)'">→ Sustainable Weight Loss Starter Guide</a>
+ <a href="guides.html" style="font-size:0.85rem;color:var(--charcoal-mid);text-decoration:none;padding:0.8rem;background:var(--cream);display:block;font-weight:300;transition:background 0.2s" onmouseover="this.style.background='var(--cream-dark)'" onmouseout="this.style.background='var(--cream)'">→ Beginner Strength Training Guide</a>
+ <a href="guides.html" style="font-size:0.85rem;color:var(--charcoal-mid);text-decoration:none;padding:0.8rem;background:var(--cream);display:block;font-weight:300;transition:background 0.2s" onmouseover="this.style.background='var(--cream-dark)'" onmouseout="this.style.background='var(--cream)'">→ High Protein Eating Guide</a>
+ </div>
+ </div>
+
+ <div class="sidebar-section">
+ <h3>About Em</h3>
+ <p style="font-size:0.85rem;color:var(--charcoal-mid);font-weight:300;line-height:1.7">Emily Gray is a Masters Graduate Exercise Physiologist with a exercise physiology degree. She specialises in sustainable weight loss for women.</p>
+ <a href="coach.html" style="font-size:0.82rem;color:var(--blush);text-decoration:none;display:inline-block;margin-top:0.5rem">Read more about Em →</a>
+ </div>
+ </aside>
+ </div>
+ </div>
+</section>
+
+<div class="cta-banner">
+ <p class="section-label">Want results not just reading?</p>
+ <h2>Turn knowledge into<br><em>real weight loss.</em></h2>
+ <p>Book a free 30-min call with Em and get a personalised plan built around your goals life and body.</p>
+ <a href="https://calendly.com/emilygray81099/free-30min-consult-call" class="btn-light">Book a free call</a>
+</div>
+
+<div class="marquee-strip">
+ <div class="marquee-inner">
+ <span class="marquee-item">Online Coaching<span class="dot">·</span></span>
+ <span class="marquee-item">Personalised Programs<span class="dot">·</span></span>
+ <span class="marquee-item">Strength Training<span class="dot">·</span></span>
+ <span class="marquee-item">Nutrition Guidance<span class="dot">·</span></span>
+ <span class="marquee-item">Masters Graduate in Exercise Physiology<span class="dot">·</span></span>
+ <span class="marquee-item">Sustainable Habits<span class="dot">·</span></span>
+ <span class="marquee-item">Weekly Check-ins<span class="dot">·</span></span>
+ <span class="marquee-item">Online Coaching<span class="dot">·</span></span>
+ <span class="marquee-item">Personalised Programs<span class="dot">·</span></span>
+ <span class="marquee-item">Strength Training<span class="dot">·</span></span>
+ <span class="marquee-item">Nutrition Guidance<span class="dot">·</span></span>
+ <span class="marquee-item">Masters Graduate in Exercise Physiology<span class="dot">·</span></span>
+ <span class="marquee-item">Sustainable Habits<span class="dot">·</span></span>
+ <span class="marquee-item">Weekly Check-ins<span class="dot">·</span></span>
+ </div>
+</div>
+<footer>
+ <div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <a href="index.html" class="nav-logo"><img src="images/logo-white-wordmark.png" alt="Fitness By Em" class="logo-img"></a>
+ <p>Online fitness coaching for women who want to build strength train consistently and feel confident without extremes.</p>
+ <div class="footer-social">
+ <a href="https://www.instagram.com/_fitnessbyem_" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+ <a href="#" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+ </div>
+ </div>
+ <div class="footer-col">
+ <h4>Programs</h4>
+ <ul>
+ <li><a href="programs.html#essential">Essential Plan</a></li>
+ <li><a href="programs.html#signature">Signature Method</a></li>
+ <li><a href="elevate.html">Elevate Subscription</a></li>
+ <li><a href="guides.html">Free Guides</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>About</h4>
+ <ul>
+ <li><a href="coach.html">Meet Emily</a></li>
+ <li><a href="blog.html">Blog</a></li>
+ <li><a href="transformations.html">Transformations</a></li>
+ <li><a href="faq.html">FAQ</a></li>
+ <li><a href="community.html">Community</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Contact</h4>
+ <ul>
+ <li><a href="mailto:admin@fitnessbyem.com.au">admin@fitnessbyem.com.au</a></li>
+ <li><a href="https://calendly.com/emilygray81099/free-30min-consult-call">Book a free call</a></li>
+ <li><a href="https://www.instagram.com/_fitnessbyem_">Instagram</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© 2026 Fitness By Em. All rights reserved.</span>
+ <span class="footer-legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="disclaimer.html">Disclaimer</a></span> <span class="footer-credit">Created by <a href="mailto:Jess@pivotco.com.au" rel="noopener">Pivot Co.</a></span>
+ </div>
+ </div>
+</footer>
+<script>
+const nav = document.getElementById('main-nav');
+if(nav) window.addEventListener('scroll', () => {
+ nav.style.padding = window.scrollY > 60 ? '0.8rem 4rem' : '1.2rem 4rem';
+}, {passive:true});
+const links = document.querySelectorAll('.nav-links a, .mobile-menu a');
+links.forEach(a => { if(a.href === window.location.href) a.classList.add('active'); });
+</script>
+</body>
+</html>
